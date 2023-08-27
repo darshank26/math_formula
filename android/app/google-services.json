@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "378146913306",
+    "project_id": "math-formula-fdfbd",
+    "storage_bucket": "math-formula-fdfbd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378146913306:android:89c67b73d0e582dcdfe5a3",
+        "android_client_info": {
+          "package_name": "com.darshankomu.mathformula"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378146913306-mqfdl29lom8d5ba4v21trlgc4ni72j3j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk2OKOx_AkbXE00DacgP8njoISoo-gY7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378146913306-mqfdl29lom8d5ba4v21trlgc4ni72j3j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
