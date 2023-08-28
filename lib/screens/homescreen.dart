@@ -24,7 +24,6 @@ class _HomeScreenState extends State<HomeScreen> {
     ListItem(title: 'Trigonometry'),
     ListItem(title: 'Derivative'),
     ListItem(title: 'Analytical Geometry'),
-    ListItem(title: 'Equations'),
     ListItem(title: 'Integrations'),
     ListItem(title: 'Laplace'),
     ListItem(title: 'Fourier'),
@@ -109,33 +108,39 @@ class _HomeScreenState extends State<HomeScreen> {
         shrinkWrap: true,
         itemBuilder: (BuildContext context, int index) {
           return ListTile(
-            title: Container(
-              height: 100,
-              width: double.infinity,
-              child: Card(
-                  color: klistcolor, // Set your desired background color here
-                  elevation: 0,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16.0), // Set your desired corner radius
-                  ),
-                  child: ListTile(
-                    title: Padding(
-                      padding: const EdgeInsets.only(left:4.0,bottom: 4.0),
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text(items[index].title,
-                          style: GoogleFonts.poppins(textStyle: TextStyle(
-                          fontSize: 20,
-                          color: ktextcolor,
-                          letterSpacing: 0.8,
-                          fontWeight: FontWeight.w800,))
+            title: GestureDetector(
+              onTap: ()
+              {
+                Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: Listscreen(listIndex : index+1,title :items[index].title.toString() )));
+              },
+              child: Container(
+                height: 100,
+                width: double.infinity,
+                child: Card(
+                    color: klistcolor, // Set your desired background color here
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16.0), // Set your desired corner radius
+                    ),
+                    child: ListTile(
+                      title: Padding(
+                        padding: const EdgeInsets.only(left:4.0,bottom: 4.0),
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(items[index].title,
+                            style: GoogleFonts.poppins(textStyle: TextStyle(
+                            fontSize: 20,
+                            color: ktextcolor,
+                            letterSpacing: 0.8,
+                            fontWeight: FontWeight.w800,))
 
+                          ),
                         ),
                       ),
-                    ),
-                    trailing: Icon(Icons.arrow_forward_ios_rounded,size: 28,color: ktextcolor,), // Your desired icon
+                      trailing: Icon(Icons.arrow_forward_ios_rounded,size: 28,color: ktextcolor,), // Your desired icon
 
-                  )),
+                    )),
+              ),
             ),
 
 
