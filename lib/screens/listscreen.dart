@@ -504,9 +504,9 @@ class _ListscreenState extends State<Listscreen> {
           backgroundColor: kappbarcolor,
           elevation: 10,
           title: Text(widget.title,
-              style: GoogleFonts.poppins(
+              style: GoogleFonts.nunito(
                   letterSpacing: 0.8,
-                  fontSize: 22,
+                  fontSize: 24,
                   color: kmainbackgroundcolor,
                   fontWeight: FontWeight.w900)),
         ),
@@ -550,8 +550,8 @@ class _ListscreenState extends State<Listscreen> {
                           child: Align(
                             alignment: Alignment.centerLeft,
                             child: Text(items_1[index].title,
-                                style: GoogleFonts.poppins(textStyle: TextStyle(
-                                  fontSize: 20,
+                                style: GoogleFonts.nunito(textStyle: TextStyle(
+                                  fontSize: 22,
                                   color: ktextcolor,
                                   letterSpacing: 0.8,
                                   fontWeight: FontWeight.w800,))

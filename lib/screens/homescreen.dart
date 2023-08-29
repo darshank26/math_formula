@@ -94,9 +94,9 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Align(
           alignment: Alignment.center,
           child: Text("Math Formula",
-              style: GoogleFonts.poppins(
+              style: GoogleFonts.nunito(
                   letterSpacing: 0.8,
-                  fontSize: 22,
+                  fontSize: 24,
                   color: kmainbackgroundcolor,
                   fontWeight: FontWeight.w900)),
         ),
@@ -128,8 +128,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Align(
                           alignment: Alignment.centerLeft,
                           child: Text(items[index].title,
-                            style: GoogleFonts.poppins(textStyle: TextStyle(
-                            fontSize: 20,
+                            style: GoogleFonts.nunito(textStyle: TextStyle(
+                            fontSize: 22,
                             color: ktextcolor,
                             letterSpacing: 0.8,
                             fontWeight: FontWeight.w800,))

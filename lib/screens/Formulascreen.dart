@@ -28,29 +28,73 @@ class _FormulascreenState extends State<Formulascreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: kmainbackgroundcolor,
-      appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(
-              Icons.arrow_back_ios_new_rounded, color: kmainbackgroundcolor),
-          onPressed: () => Navigator.of(context).pop(),
-        ),
-        backgroundColor: kappbarcolor,
-        elevation: 10,
-        title: Text(widget.title,
-            style: GoogleFonts.poppins(
-                letterSpacing: 0.8,
-                fontSize: 22,
-                color: kmainbackgroundcolor,
-                fontWeight: FontWeight.w900)),
-      ),
-      body: Container(
-          child: PhotoView(
-            backgroundDecoration: BoxDecoration(color: Colors.white),
-            imageProvider: AssetImage("assets/algebra/factoring_formula.png"),
+
+    if(widget.listIndex == 1) {
+      return Scaffold(
+          backgroundColor: Colors.white,
+          appBar: AppBar(
+            leading: IconButton(
+              icon: Icon(
+                  Icons.arrow_back_ios_new_rounded,
+                  color: kmainbackgroundcolor),
+              onPressed: () => Navigator.of(context).pop(),
+            ),
+            backgroundColor: kappbarcolor,
+            elevation: 10,
+            title: Text(widget.title,
+                style: GoogleFonts.nunito(
+                    letterSpacing: 0.8,
+                    fontSize: 24,
+                    color: kmainbackgroundcolor,
+                    fontWeight: FontWeight.w900)),
+          ),
+          body: Container(
+              width: double.infinity,
+              height: 500,
+              child: PhotoView(
+                minScale: 0.4,
+                backgroundDecoration: BoxDecoration(color: Colors.white),
+                imageProvider: AssetImage(
+                    "assets/algebra/factoring_formula.png"),
+              )
           )
-      )
-    );
+      );
+    }
+    else if (widget.listIndex == 2)
+      {
+        return Scaffold(
+            backgroundColor: Colors.white,
+            appBar: AppBar(
+              leading: IconButton(
+                icon: Icon(
+                    Icons.arrow_back_ios_new_rounded,
+                    color: kmainbackgroundcolor),
+                onPressed: () => Navigator.of(context).pop(),
+              ),
+              backgroundColor: kappbarcolor,
+              elevation: 10,
+              title: Text(widget.title,
+                  style: GoogleFonts.nunito(
+                      letterSpacing: 0.8,
+                      fontSize: 24,
+                      color: kmainbackgroundcolor,
+                      fontWeight: FontWeight.w900)),
+            ),
+            body: Container(
+              width: double.infinity,
+              height: 500,
+              child: PhotoView(
+                minScale: 0.2,
+                backgroundDecoration: BoxDecoration(color: Colors.white),
+                imageProvider: AssetImage(
+                    "assets/algebra/product_formula.png"),
+              ),
+            )
+        );
+
+      }
+    else {
+      return Container();
+    }
   }
 }
