@@ -93,6 +93,41 @@ class _FormulascreenState extends State<Formulascreen> {
         );
 
       }
+    else if (widget.listIndex == 3)
+    {
+      return Scaffold(
+          backgroundColor: Colors.white,
+          appBar: AppBar(
+            leading: IconButton(
+              icon: Icon(
+                  Icons.arrow_back_ios_new_rounded,
+                  color: kmainbackgroundcolor),
+              onPressed: () => Navigator.of(context).pop(),
+            ),
+            backgroundColor: kappbarcolor,
+            elevation: 10,
+            title: Text(widget.title,
+                style: GoogleFonts.nunito(
+                    letterSpacing: 0.8,
+                    fontSize: 24,
+                    color: kmainbackgroundcolor,
+                    fontWeight: FontWeight.w900)),
+          ),
+          body: SingleChildScrollView(
+            child: Container(
+              width: double.infinity,
+              height: 1000,
+              child: PhotoView(
+                minScale: 0.9,
+                backgroundDecoration: BoxDecoration(color: Colors.white),
+                imageProvider: AssetImage(
+                    "assets/algebra/root_formula.png"),
+              ),
+            ),
+          )
+      );
+
+    }
     else {
       return Container();
     }
