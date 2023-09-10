@@ -128,6 +128,114 @@ class _FormulascreenState extends State<Formulascreen> {
       );
 
     }
+    else if (widget.listIndex == 4)
+    {
+      return Scaffold(
+          backgroundColor: Colors.white,
+          appBar: AppBar(
+            leading: IconButton(
+              icon: Icon(
+                  Icons.arrow_back_ios_new_rounded,
+                  color: kmainbackgroundcolor),
+              onPressed: () => Navigator.of(context).pop(),
+            ),
+            backgroundColor: kappbarcolor,
+            elevation: 10,
+            title: Text(widget.title,
+                style: GoogleFonts.nunito(
+                    letterSpacing: 0.8,
+                    fontSize: 24,
+                    color: kmainbackgroundcolor,
+                    fontWeight: FontWeight.w900)),
+          ),
+          body: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+                width: double.infinity,
+                height: 600,
+                child: PhotoView(
+                  minScale: 0.5,
+                  backgroundDecoration: BoxDecoration(color: Colors.white),
+                  imageProvider: AssetImage(
+                      "assets/algebra/power_formula.png"),
+                )
+            ),
+          )
+      );
+
+    }
+    else if (widget.listIndex == 5)
+    {
+      return Scaffold(
+          backgroundColor: Colors.white,
+          appBar: AppBar(
+            leading: IconButton(
+              icon: Icon(
+                  Icons.arrow_back_ios_new_rounded,
+                  color: kmainbackgroundcolor),
+              onPressed: () => Navigator.of(context).pop(),
+            ),
+            backgroundColor: kappbarcolor,
+            elevation: 10,
+            title: Text(widget.title,
+                style: GoogleFonts.nunito(
+                    letterSpacing: 0.8,
+                    fontSize: 24,
+                    color: kmainbackgroundcolor,
+                    fontWeight: FontWeight.w900)),
+          ),
+          body: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+                width: double.infinity,
+                height: 600,
+                child: PhotoView(
+                  minScale: 0.5,
+                  backgroundDecoration: BoxDecoration(color: Colors.white),
+                  imageProvider: AssetImage(
+                      "assets/algebra/log_formula.png"),
+                )
+            ),
+          )
+      );
+
+    }
+    else if (widget.listIndex == 6)
+    {
+      return Scaffold(
+          backgroundColor: Colors.white,
+          appBar: AppBar(
+            leading: IconButton(
+              icon: Icon(
+                  Icons.arrow_back_ios_new_rounded,
+                  color: kmainbackgroundcolor),
+              onPressed: () => Navigator.of(context).pop(),
+            ),
+            backgroundColor: kappbarcolor,
+            elevation: 10,
+            title: Text(widget.title,
+                style: GoogleFonts.nunito(
+                    letterSpacing: 0.8,
+                    fontSize: 24,
+                    color: kmainbackgroundcolor,
+                    fontWeight: FontWeight.w900)),
+          ),
+          body: Padding(
+            padding: const EdgeInsets.only(left:20.0),
+            child: Container(
+                width: double.infinity,
+                height: 600,
+                child: PhotoView(
+                  minScale: 0.8,
+                  backgroundDecoration: BoxDecoration(color: Colors.white),
+                  imageProvider: AssetImage(
+                      "assets/algebra/complex_formula.png"),
+                )
+            ),
+          )
+      );
+
+    }
     else {
       return Container();
     }

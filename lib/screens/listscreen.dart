@@ -536,6 +536,24 @@ class _ListscreenState extends State<Listscreen> {
                         type: PageTransitionType.fade, child: Formulascreen(listIndex: index+1,title: items_1[index].title)));
 
                   }
+                  else   if( index == 3)
+                  {
+                    Navigator.push(context, PageTransition(
+                        type: PageTransitionType.fade, child: Formulascreen(listIndex: index+1,title: items_1[index].title)));
+
+                  }
+                  else   if( index == 4)
+                  {
+                    Navigator.push(context, PageTransition(
+                        type: PageTransitionType.fade, child: Formulascreen(listIndex: index+1,title: items_1[index].title)));
+
+                  }
+                  else   if( index == 5)
+                  {
+                    Navigator.push(context, PageTransition(
+                        type: PageTransitionType.fade, child: Formulascreen(listIndex: index+1,title: items_1[index].title)));
+
+                  }
 
                 },
                 child: Container(
